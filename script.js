@@ -37,7 +37,7 @@ function generateButtons() {
             }
             for (let k = 1; k <= randomNoOfObjects; ++k) {
                 if (i == 0 && j == colObject[k]) {
-                button.style.backgroundColor = "red";
+                    button.style.backgroundColor = "red";
                 }
             }
             if (j == boardLen - 1 ) {
@@ -86,9 +86,9 @@ function moveObjectDown() {
     document.getElementById('Score-text').innerHTML = distroyedObjects;  
 }
 
-function removeObject(x) {
+function removeObject(objectIndex) {
     for (let i = 1; i <= randomNoOfObjects; ++i) {
-        if (x == colObject[i]) {
+        if (objectIndex == colObject[i]) {
             for (let j = i; j <= randomNoOfObjects; ++j) {
                 colObject[j] = colObject[j + 1];
             } 
