@@ -18,7 +18,6 @@ function addStrangeObjects() {
         if (duplicateFound == 0) {
             colObject[++i] = newRandomEl;
         }
-        console.log("randomNoOfObjects: " + randomNoOfObjects + " " + colObject[i]);
     }
 }
 
@@ -121,8 +120,6 @@ function airplaneMovesLeftRightShots() {
                 shot.style.backgroundColor = "yellow";
             }
             removeObject(colPlane);
-            console.log("coloana proiectilului e: " + colPlane);
-            console.log("distroyedObjects: " + distroyedObjects);
         }
         const airplane = document.getElementById(linePlane * HUNDRED + colPlane);
         airplane.style.backgroundColor = "green";
